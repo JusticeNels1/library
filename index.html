@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 boilerplate – all you really need…</title>
+	<link rel="stylesheet" href="style.css">
+	
+
+<body id="home">
+
+	<div id="main">
+		<button class= "add-entry" onclick="openNav()">New Book</button>
+	</div>	
+
+	<table style = "width:100%" id ="table">
+
+		<thead id = "header">
+			<th>Title</th>
+			<th>Author</th>
+			<th>Pages</th>
+			<th>Read</th>
+			<th>Delete</th>
+		</thead>
+		
+	</table>
+		
+		<div id="mySidebar" class="sidebar">
+			<h2>Adding/Editing a Book</h2>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<input type="text" id="title" placeholder="Title">
+			<input type="text" id="author" placeholder="Author">
+			<input type="number" id="pages" placeholder="Pages" min="0">
+			
+			<fieldset role="radiogroup">
+				
+				<input type="checkbox" id="read" value="read">
+  				<label for="read"> I've Read This Book!</label><br>
+				<div class="button-group">
+					<button id="submit">Submit</button>
+					<button id="return">Return</button>
+				</div>
+
+			</fieldset>	
+				
+		</div>
+</body>
+<script src = "script.js"></script>
+</html>
